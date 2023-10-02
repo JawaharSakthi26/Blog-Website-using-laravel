@@ -46,12 +46,12 @@
                     </div>
 
                     <!-- Tags -->
-                    <ul class="list-inline mb-5">
+                    <!-- <ul class="list-inline mb-5">
                         <li class="list-inline-item"><a class="tag" href="!#">#Business</a></li>
                         <li class="list-inline-item"><a class="tag" href="!#">#Tricks</a></li>
                         <li class="list-inline-item"><a class="tag" href="!#">#Financial</a></li>
                         <li class="list-inline-item"><a class="tag" href="!#">#Economy</a></li>
-                    </ul>
+                    </ul> -->
 
                     <!-- Comments and Replies Section -->
                     <div class="comments-container mb-3">

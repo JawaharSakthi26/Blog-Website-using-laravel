@@ -21,6 +21,8 @@
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     {{-- <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png"> --}}
+    <link rel="stylesheet" href="{{asset('assets/plugins/owlcarousel/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/owlcarousel/owl.theme.default.min.css')}}">
     <style>
       .comment-container {
             margin-bottom: 20px;
@@ -82,7 +84,13 @@
     <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     {{-- <script src="vendor/glightbox/glightbox.js"></script> --}}
     <script src="{{asset('assets/js/theme.js')}}"></script>
+    <script src="{{asset('assets/plugins/owlcarousel/owl.carousel.min.js')}}"></script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+      }); 
+    </script>
   </body>
 </html>
