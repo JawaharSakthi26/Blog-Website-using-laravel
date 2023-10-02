@@ -21,6 +21,18 @@
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     {{-- <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png"> --}}
+    <style>
+      .comment-container {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+
+        .reply-container {
+            margin-left: 20px;
+        }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
@@ -38,7 +50,7 @@
               </li> --}}
               <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }}
+                    <img src="{{asset('uploads/users/' . Auth::user()->photo)}}" class="img-fluid rounded-circle mx-2" width="30" alt="">{{ Auth::user()->name }}
                 </a>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('logout') }}"

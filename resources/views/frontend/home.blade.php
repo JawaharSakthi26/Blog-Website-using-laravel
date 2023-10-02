@@ -21,7 +21,7 @@
     </div>
   </section>
 
-<div class="container">
+<div class="container mb-5">
   @foreach ($categories as $index => $category)
     <div class="row d-flex align-items-stretch g-0 mt-2">
       <div class="col-lg-7">
