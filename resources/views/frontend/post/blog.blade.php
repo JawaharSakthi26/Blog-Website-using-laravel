@@ -64,8 +64,7 @@
                         <p>No comments posted yet.</p>
                     @endif
                     </div>
-
-                    <!-- Leave a Comment Section -->
+                    @if(Auth::user()->role != '1')
                     <div class="mb-5">
                         <header>
                             <h3 class="h6 mb-4">Leave a reply</h3>
@@ -93,6 +92,7 @@
                             </div>
                         </form>
                     </div>
+                    @endif
                 </div>
             </main>
             @include('layouts.include.frontend-sidebar')
